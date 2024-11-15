@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+  }
+  :root {
+    --bg-color: #080808;
+    --second-bg-color: #101010;
+    --text-color: white;
+    --main-color: #724678;
+    --bg-img:url(1.jpg);
+  }
+  html {
+    font-size: 60%;
+    overflow-x: hidden;
+  }
+  body{
+    background: var(--bg-color);
+    color: var(--text-color);
+  }
+  section{
+    min-height: 100vh;
+    padding: 10rem 10%;
+ }
+ .btn{
+  font-size: 1.8rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  background: linear-gradient(270deg, #724678,#63216C );
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  color: white;
+  border: none;
+  text-wrap: nowrap;
+}
+.btn:hover{
+  transform: scale(1.05);
+}
+span{
+  background: linear-gradient(270deg, #724678,#63216C );
+  background-clip: text;
+  color: transparent;
+}
+.admin{
+  margin: auto auto;
+}
+.admin .h2{
+  font-size: 5.8rem;
+  text-align: center;
+  color: var(--text-color);
+}
+
+.admin form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin: 6rem 0;
+  text-align: center;
+}
+
+.admin form .input-box input{
+  width: 100%;
+  padding: 2.5rem;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  border-radius: 2rem;
+  border: 2px solid var(--main-color);
+  margin: 1.8rem 0;
+  resize: none;
+}
+
+.box{
+  width: 100%;
+  /* display: block; */
+  /*padding: 2.5rem;*/
+  font-size: 1.8rem;
+  color: var(--text-color);
+  /* background-color: linear-gradient(270deg, #724678,#63216C ); */
+ background-image: url(1.jpg);
+  
+  margin: 1.8rem 0;
+  /*border-bottom: none;*/
+}
+.box hr{
+  margin: auto;
+  margin-bottom: 2.5rem;
+  border: 2px solid var(--bg-color);
+}
+.box div{
+  margin-bottom: 2.5rem;
+}
+.box div .name{
+ /* background-color: var(--main-color); */
+ text-align: center;
+  width: 100%;
+  padding: 30px;
+  padding-bottom: 10px;
+  /* border-radius:2rem; */
+  border: 2.5px solid none;
+}
+
+.box h2 , h4 {
+  margin:auto;
+}
+.contact{
+ /* width: 20%; */
+ display: inline-block;
+ margin-right: 30%;
+ /* border-radius:0; */
+ width: 100%;
+ text-align: center;
+ /*padding: 2.5rem;*/
+ font-size: 1.8rem;
+ color: var(--text-color);
+ /* background-color: var(--bg-color); */
+ /* border: 2px solid var(--main-color); */
+ margin: 1.8rem 0;
+ padding: 2rem;
+}
+@media(max-width:1368px){
+  .admin{
+    margin-top: 20%;
+  }
+}
